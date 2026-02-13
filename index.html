@@ -156,6 +156,8 @@ body {
     <div class="polaroid active"><img src="photo1.jpg"></div>
     <div class="polaroid"><img src="photo2.jpg"></div>
     <div class="polaroid"><img src="photo3.jpg"></div>
+    <div class="polaroid"><img src="photo4.jpg"></div>
+    <div class="polaroid"><img src="photo5.jpg"></div>
 </div>
 
 <!-- Envelope -->
@@ -236,12 +238,13 @@ const slides = document.querySelectorAll(".polaroid");
 let current = 0;
 setInterval(() => {
     slides[current].classList.remove("active");
-    current = (current + 1) % slides.length;
+    current = (current + 3) % slides.length;
     slides[current].classList.add("active");
-}, 5500);
+}, 2500);
 </script>
 
 </body>
 </html>
+
 
 
